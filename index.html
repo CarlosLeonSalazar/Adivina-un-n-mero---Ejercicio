@@ -1,0 +1,42 @@
+<!-- Carlos León Salazar -->
+<!doctype html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos León Salazar">
+    <meta name="description" content="Juego adivinar un número">
+    <meta name="copyright" content="Carlos León Salazar">
+    <meta name="generator" content="Visual Studio Code">
+    <title>Adivina un número</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="container-fluid text-bg-primary text-center p-5">
+        <h1>Adivina un número</h1>
+    </header>
+    <main class="container mt-5">
+
+    <h3 class="text-center">Adivina un número del 1 al 20</h3>
+    <h5 class="text-center mb-5">Tienes sólo 3 intentos</h5>
+    <button onclick="adivinaNumero()" type="button" class="btn btn-primary">Comenzar</button>
+    <div class="row">        
+        <div id="intento" class="col-6"></div>
+        <p class="col-3">Intentos: <span id="intentos"></span></p>
+        <p class="col-3">Resultado: <span id="resultado"></span></p>
+    </div>
+
+    <button onclick="borrar()"  type="button" class="btn btn-danger mt-5">Borrar</button>
+    </main>
+    <footer>
+        <p class="text-center text-muted mt-5 p-5">&copy; 2022 Carlos León Salazar. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
